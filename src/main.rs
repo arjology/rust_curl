@@ -15,9 +15,9 @@ use std::str;
 // 	-H 'X-Entity-type: application/octet-stream' \
 // 	-H 'x-custom-metadata: blah' \
 // 	--data-binary '@test.blob' \
-// 	https:jsonplaceholder.typicode.com/posts
+// 	http://example.com
 
-const URI: &str = "https://jsonplaceholder.typicode.com/posts";
+const URI: &str = "http://example.com";
 
 #[derive(Parser, Debug)]
 #[clap(author, version, about, long_about = None)]
